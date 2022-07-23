@@ -1,4 +1,4 @@
-import Cookies from './node_modules/js-cookie/dist/js.cookie.mjs'
+import Cookies from './node_modules/js-cookie/dist/js.cookie.js'
 
 const banner = document.querySelector('.cookie-pop');
 const acceptAll = document.querySelectorAll('#acceptAll');
