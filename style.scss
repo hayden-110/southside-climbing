@@ -293,12 +293,44 @@ main {
         }
     }
 
-    .gform {
-        margin: 0 auto;
-        height: 910px;
-        overflow: visible;
-        width: 700px;
-        display: block;
+    .contact {
+        form {
+            padding-left: 20px;
+            label {
+                margin-top: 10px;
+                font-family: omnes-pro, sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 1.5em;
+                color: #484848;
+              }
+              input, textarea {
+                font-family: quasimoda, sans-serif;
+                font-size: 1.2em;
+                font-weight: 400;
+                color: #2e2e2e;
+                padding: 5px 7px;
+                margin-top: 3px;
+                border: 2px solid lightcyan;
+              }
+              textarea {
+                width: 90%;
+              }
+              button {
+                border-radius: 10px;
+                border: none;
+                color: #F2F2F2;
+                background-color: #1fb8c0;
+                padding: 5px 20px 5px;
+                font-family: navigo, sans-serif;
+                font-size: 1.5em;
+                &:active {
+                    background-color: #048b92;
+                  }
+              }
+          }
+
+
     }
 
 }
@@ -452,6 +484,19 @@ footer {
     }
     }
 
+    .cookie-pop {
+        &-buttons {
+        display: flex;
+        }
+
+        a, p {
+            font-size: 18px;
+        }
+
+        button {
+            font-size: 20px;
+        }
+    }
     
     main {
 
@@ -467,17 +512,17 @@ footer {
             margin: 10px auto;
 
             &-text {
-                font-size: 1em;
+                font-size: 1.2em;
                 padding: 0;
             }
         }
         
     .intro {
-        font-size: 1em;
+        font-size: 1.4em;
     }
 
     h3 {
-        font-size: 1.4em;
+        font-size: 1.8em;
     }
 
     .included {
@@ -505,7 +550,7 @@ footer {
 
                 &-book {
                     border: 3px solid;
-                    font-size: 1em;
+                    font-size: 1.2em;
                     padding: 5px 10px;
                     margin: 10px auto;
 
@@ -514,11 +559,6 @@ footer {
         }
     }
 
-    .contact {
-        .gform {
-            height: 950px;
-        }
-    }
 
 }
 
