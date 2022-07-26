@@ -56,7 +56,7 @@ nav {
 
     p {
         color: #F2F2F2;
-        padding: 20px;
+        padding: 20px 20px 10px;
     }
     
     a {
@@ -84,7 +84,7 @@ nav {
 
     &-buttons {
         display: block;
-        margin: auto 20px;
+        margin: 0px 20px 10px;
     }
 
 }
@@ -296,6 +296,10 @@ main {
     .contact {
         form {
             padding-left: 20px;
+
+            * {
+                display: block;
+            }
             label {
                 margin-top: 10px;
                 font-family: omnes-pro, sans-serif;

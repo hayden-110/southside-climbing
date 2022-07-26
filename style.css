@@ -51,7 +51,7 @@ nav .title h1 {
 }
 .cookie-pop p {
   color: #F2F2F2;
-  padding: 20px;
+  padding: 20px 20px 10px;
 }
 .cookie-pop a {
   color: #842484;
@@ -74,7 +74,7 @@ nav .title h1 {
 }
 .cookie-pop-buttons {
   display: block;
-  margin: auto 20px;
+  margin: 0px 20px 10px;
 }
 
 .cookie-settings {
@@ -244,6 +244,9 @@ main .bookings-opt .airbnb-img {
 }
 main .contact form {
   padding-left: 20px;
+}
+main .contact form * {
+  display: block;
 }
 main .contact form label {
   margin-top: 10px;
