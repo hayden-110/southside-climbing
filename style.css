@@ -277,6 +277,22 @@ main .contact form button {
 main .contact form button:active {
   background-color: #048b92;
 }
+main .contact .sent {
+  text-align: center;
+}
+main .contact .sent .tick {
+  width: 25%;
+}
+main .contact .sent h4 {
+  font-family: omnes-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5em;
+  color: #08a92b;
+}
+main .contact .sent p {
+  font-size: 1em;
+}
 
 footer {
   background-color: #16867e;
@@ -364,10 +380,6 @@ footer .socials a {
   }
   main .contact h3 {
     padding: 10px 20px;
-  }
-  main .contact .gform {
-    width: 100%;
-    height: 920px;
   }
 
   .cookie-settings h3 {

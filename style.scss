@@ -330,7 +330,24 @@ main {
               }
           }
 
+          .sent {
 
+            text-align: center;
+            .tick {
+            width: 25%;
+          }
+          h4 {
+                font-family: omnes-pro, sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                font-size: 1.5em;
+                color: #08a92b;
+          }
+
+          p {
+            font-size: 1em;
+          }
+        }
     }
 
 }
@@ -443,11 +460,6 @@ footer {
 
             h3 {
                 padding: 10px 20px
-            }
-
-            .gform {
-                width: 100%;
-                height: 920px;
             }
         }
     }
