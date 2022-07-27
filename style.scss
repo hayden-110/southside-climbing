@@ -84,7 +84,7 @@ nav {
 
     &-buttons {
         display: block;
-        margin: 0px 20px 10px;
+        margin: 10px 20px;
     }
 
 }
@@ -465,6 +465,12 @@ footer {
             h3 {
                 padding: 10px 20px
             }
+        }
+    }
+
+    .cookie-pop {
+        &-buttons {
+            margin: 0 20px 10px;
         }
     }
 

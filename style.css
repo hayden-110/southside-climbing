@@ -74,7 +74,7 @@ nav .title h1 {
 }
 .cookie-pop-buttons {
   display: block;
-  margin: 0px 20px 10px;
+  margin: 10px 20px;
 }
 
 .cookie-settings {
@@ -383,6 +383,10 @@ footer .socials a {
   }
   main .contact h3 {
     padding: 10px 20px;
+  }
+
+  .cookie-pop-buttons {
+    margin: 0 20px 10px;
   }
 
   .cookie-settings h3 {
