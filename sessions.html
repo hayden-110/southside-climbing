@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Southside Climbing</title>
+    <meta name="description"
+        content="Experience climbing with Southside Climbing. We our based in Dorset, and run climbing sessions for beginners at Portland. You can learn to climb and belay your friends and family!">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E43RTCJ9NH"></script>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/sessions.css">
+
+    <!-- ADOBE FONT -->
+    <link rel="stylesheet" href="https://use.typekit.net/zda5awh.css">
+</head>
+<body>
+    <nav>
+        <a class="title">
+            <img src="./media/logo.svg" alt="An ocean wave with a pink sky" class="logo">
+            <h1>Southside Climbing</h1>
+        </a>
+
+        <div class="burger"><img src="./media/icons/burger.svg" alt="burger menu"></div>
+    </nav>
+
+    <main>
+        
+        <div class="taster bs">
+            <h3>Taster Session</h3>
+            <p class="bookings-text bs-text">We run 3 hour sessions in small groups. You can view our prices and book
+                through Airbnb. For private
+                booking, please contact us on the form below.</p>
+            <div class="bookings-opt">
+                <img src="./media/hayden-hang.jpg" alt="Hayden sat in his harness, suspended next to the rock"
+                    class="airbnb-img">
+                <a class="bookings-opt-bnb"
+                    href="https://www.airbnb.co.uk/experiences/3603916?location=dorset&currentTab=experience_tab&federatedSearchId=cce25cb2-6079-4718-9255-5f3a96fefec8&searchId=&sectionId=d386bc4a-863f-4df5-b652-fdfdafe486d5&source=p2">
+                    <img src="./media/airbnb-logo.svg" alt="Air BnB logo" class="airbnb">
+                    <button class="airbnb-book bs-button-pri">Book</button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <div class="cookie-pop none">
+        <p>Our website uses cookies. Please review our policy <a href="privacy-policy.pdf">here</a>, and select your
+            preferences.</p>
+        <div class="cookie-pop-buttons">
+            <button class="cookie-pop-settings" id="open-cookies">Cookie Settings</button>
+            <button class="cookie-pop-accept" id="acceptAll" name="cookie-pop">Accept All</button>
+        </div>
+    </div>
+
+    <div class="cookie-settings none">
+        <div class="cookie-settings-box">
+            <h3>Cookie Settings</h3>
+            <p>Please see our <a href="privacy-policy.pdf">privacy policy</a> for more information on our cookies.</p>
+            <div class="cookie-settings-opt">
+                <div class="cookie-settings-opt-text">
+                    <h4>Essential Cookies</h4>
+                    <p>These cookies are used to remember your chosen preferences on previous visits. This is a required
+                        cookie.</p>
+                </div>
+                <input type="checkbox" class="checkbox" id="southsideEssential" checked onclick="return false">
+            </div>
+            <div class="cookie-settings-opt">
+                <div class="cookie-settings-opt-text">
+                    <h4>Tracking Cookies</h4>
+                    <p>We use Google Analytics to collect information on our visitors, such as how you use the website.
+                    </p>
+                </div>
+                <input type="checkbox" class="checkbox" id="southsideAnalytics">
+            </div>
+            <div class="cookie-settings-opt">
+                <div class="cookie-settings-opt-text">
+                    <h4>Third Party Cookies</h4>
+                    <p>We use services from other providers to deliver content and functionality to our site.</p>
+                </div>
+                <input type="checkbox" class="checkbox" id="southsideThirdParty">
+            </div>
+            <div class="cookie-settings-opt">
+                <div class="cookie-settings-opt-text">
+                    <h4>Marketing Cookies</h4>
+                    <p>These cookies are used to market our Ads on other website you may visit.</p>
+                </div>
+                <input type="checkbox" class="checkbox" id="southsideMarket">
+            </div>
+            <div class="cookie-settings-buttons">
+                <button class="settings-save">Save Cookie</button>
+                <button class="settings-acceptAll" id="acceptAll" name="cookie-settings">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="links">
+            <a href="privacy-policy.pdf">Privacy Policy</a>
+            <p id="open-cookies">Cookies Settings</p>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/southsideclimbing/" class="socials-fb"><img src="/media/facebook.svg"
+                    alt="facebook logo"></a>
+            <a href="https://www.instagram.com/southsideclimbing/" class="socials-insta"><img src="/media/instagram.svg"
+                    alt="facebook logo"></a>
+        </div>
+    </footer>
+    <script src="./dist/script/main.js"></script>
+</body>
+</html>

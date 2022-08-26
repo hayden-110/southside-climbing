@@ -1,4 +1,4 @@
-// sass --watch style.scss style.css
+// sass --watch style.scss ./asset/css/style.css
 
 * {
     margin: 0;
@@ -7,13 +7,18 @@
 nav {
     background-color: #2eada4;
     padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    box-sizing: border-box;
+
+
 
     .title {
         display: flex;
 
         .logo {
             width: 70px;
-            margin-left: 2%;
         }
 
         h1 {
@@ -23,14 +28,23 @@ nav {
             font-size: 50px;
             color: white;
             margin: auto 20px;
-            // min-height: 70px;
+            white-space: nowrap;
+
         }
 
+    }
+
+    .burger {
+        margin: auto 0;
     }
 }
 
 .none {
     display: none !important;
+}
+
+.mob-only {
+    display: none;
 }
 
 .cookie-pop {
@@ -171,186 +185,32 @@ main {
         width: clamp(750px, 30%, 300px);
         padding: 20px;
 
-    }
-
-    .hero {
-        display: flex;
-        width: max-content;
-
-        margin: 20px auto;
-        overflow: visible;
-
-        h2 {
-            font-family: navigo, sans-serif;
-            font-weight: 500;
+        &-title {
+            font-family: omnes-pro, sans-serif;
+            font-weight: 600;
             font-style: normal;
-            font-size: 4em;
-            color: #0A96DE;
-            max-width: 350px;
-            padding: 50px 0px 50px 20px;
-            margin: auto 0 auto 0px;
-            word-spacing: 100vw;
+            font-size: 3.5em;
+            color: #19A3DE;
         }
-    }
-
-    .intro {
-        font-family: quasimoda, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 2em;
-        color: #484848;
-        text-align: center;
-        width: clamp(850px, 30%, 300px);
-        background-color: white;
-    }
-
-    h3 {
-        font-family: omnes-pro, sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        font-size: 3.5em;
-        color: #19A3DE;
-    }
-
-    p {
-        font-family: omnes-pro, sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 2em;
-        color: #484848;
-    }
-
-    .included {
-        display: flex;
-
+    
         &-text {
-            flex: 4;
+            font-family: quasimoda, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.6em;
+            color: #424242;
         }
 
-        p {
-            width: 90%;
-            margin: 5px 20px;
-        }
-
-        &-img {
-            max-width: 270px;
-            margin: 25px 30px;
-            border-radius: 40px;
-        }
-    }
-
-    .bookings {
-
-        &-text {
-            padding: 0 10px;
-        }
-        &-opt {
-            width: 95%;
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-evenly;
-
-            &-bnb {
-                // width: 40%;
-                // flex: 1;
-                // height: max-content;
-                // width: max-content;
-                // display: block;
-                flex-wrap: wrap;
-                margin-top: auto;
-                margin-bottom: 20px;
-                // vertical-align: middle;
-                text-decoration: none;
-
-                .airbnb {
-                    width: 200px;
-                    // align-self: center;
-                    // margin: 0 auto;
-                    // padding: 5%;
-                }
-
-                .airbnb-book {
-                    display: block;
-                    cursor: pointer;
-                    background: none;
-                    border: 4px solid #FD5B5D;
-                    border-radius: 10px;
-                    padding: 5px 20px 5px;
-                    margin: 15px auto;
-                    font-family: navigo, sans-serif;
-                    font-size: 1.5em;
-                    color: #FD5B5D;
-
-                }
-            }
-
-            .airbnb-img {
-                max-height: 350px;
-                width: 0auto;
-                border-radius: 40px;
-            }
-
-        }
-    }
-
-    .contact {
-        form {
-            padding-left: 20px;
-
-            * {
-                display: block;
-            }
-            label {
-                margin-top: 10px;
-                font-family: omnes-pro, sans-serif;
-                font-weight: 500;
-                font-style: normal;
-                font-size: 1.5em;
-                color: #484848;
-              }
-              input, textarea {
-                font-family: quasimoda, sans-serif;
-                font-size: 1.2em;
-                font-weight: 400;
-                color: #2e2e2e;
-                padding: 5px 7px;
-                margin-top: 3px;
-                border: 2px solid rgb(133, 242, 242);
-              }
-              textarea {
-                width: 90%;
-              }
-              button {
-                border-radius: 10px;
-                border: none;
-                color: #F2F2F2;
-                background-color: #1fb8c0;
-                padding: 5px 20px 5px;
-                font-family: navigo, sans-serif;
-                font-size: 1.5em;
-                &:active {
-                    background-color: #048b92;
-                  }
-              }
-          }
-
-          .sent {
-
-            text-align: center;
-            .tick {
-            width: 25%;
-          }
-          h4 {
-                font-family: omnes-pro, sans-serif;
-                font-weight: 600;
-                font-style: normal;
-                font-size: 1.5em;
-                color: #08a92b;
-          }
-
-          p {
-            font-size: 1em;
-          }
+        &-button-pri {
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 10px 7px;
+            font-family: navigo, sans-serif;
+            font-size: 2em;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
         }
     }
 
@@ -385,9 +245,6 @@ footer {
 
 @media (max-width: 1000px) {
 
-    body, main, nav {
-        min-width: 730px;
-    }
 
     nav {
         .title {
@@ -404,69 +261,39 @@ footer {
         }
     }
 
+    .desk-cont {
+        display: none !important;
+    }
+
+    .mob-only {
+        display: block;
+    }
+
     main {
         max-width: 100vw;
         margin: 0;
-        padding: 0;
+        padding: 5px 0;
+
 
         .bs {
             width: 85%;
-            padding: 10px 20px 20px;
+            padding: 10px 20px 5px;
             box-shadow: none;
             border-radius: 20px;
 
-            &-text {
-                width: auto;
-                padding: 0 30px;
-            }
+            
+
+            // &-button-pri {
+            //     cursor: pointer;
+            //     border: none;
+            //     border-radius: 10px;
+            //     padding: 6px 10px 0px;
+            //     margin: 15px auto;
+            //     font-family: navigo, sans-serif;
+            //     font-size: 2em;
+            //     font-weight: 700;
+            // }
         }
-
-        .hero {
-            width: 100%;
-            margin: 0;
-            flex-wrap: wrap;
-            display: block;
-
-            h2 {
-                order: 2;
-                margin: auto 0;
-                font-size: 3em;
-                width: 100%;
-                display: none;
-            }
-
-            &-img {
-                display: block;
-                order: 1;
-                margin: 0 auto;
-                max-width: 730px;
-                
-                // margin: 0;
-                padding: 10px;
-            }
-        }
-
-        .intro {
-            width: 85%;
-        }
-
-        .included {
-            display: block;
-            width: 85%;
-            &-img {
-                display: block;
-                margin: 10px auto;
-            }
-        }
-
-        .contact {
-            // padding: 0 !important;
-
-            h3 {
-                padding: 10px 20px
-            }
-        }
-    }
 
     .cookie-pop {
         &-buttons {
@@ -494,12 +321,8 @@ footer {
     }
 
     nav {
-        padding: 12px 0;
+        padding: 12px 10px;
         .title {
-        .logo {
-            width: 40px;
-            margin-left: 10px;
-        }
         h1 {
             font-size: 1.5em;
         }
@@ -521,15 +344,6 @@ footer {
     }
     
     main {
-
-        padding-bottom: 20px;
-        .hero {
-            width: 100%;
-            &-img {
-                width: 100%;
-                padding: 0;
-            }
-        }
         .bs {
             margin: 10px auto;
 
@@ -538,49 +352,7 @@ footer {
                 padding: 0;
             }
         }
-        
-    .intro {
-        font-size: 1.4em;
     }
-
-    h3 {
-        font-size: 1.8em;
-    }
-
-    .included {
-        &-img {
-            width: 150px;
-            border-radius: 20px;
-        }
-    }
-
-    .bookings {
-        &-opt {
-
-            &-bnb {
-                margin: auto 0;
-            }
-            .airbnb-img {
-                width: 40%;
-                height: auto;
-                border-radius: 20px;
-            }
-
-            .airbnb {
-                width: 20vw;
-                margin: 0 auto;
-
-                &-book {
-                    border: 3px solid;
-                    font-size: 1.2em;
-                    padding: 5px 10px;
-                    margin: 10px auto;
-
-                }
-            }
-        }
-    }
-
 
 }
 
@@ -590,4 +362,45 @@ footer {
 
 
     }
+}
+
+@media (max-width: 480px) {
+
+
+    nav {
+        .title {
+            .logo {
+                width: 40px;
+            }
+            h1 {
+                font-size: 25px;
+            }
+        }
+
+        .burger {
+            height: fit-content;
+            img {
+                height: 23px;
+            }
+        }
+    }
+
+    
+
+
+
+    main {
+        .bs {
+            &-title {
+                font-size: 30px;
+            }
+            &-button-pri {
+                font-size: 24px;
+                padding: 10px 13px 5px;
+            }
+        }
+
+        
+    }
+
 }

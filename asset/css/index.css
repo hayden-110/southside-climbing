@@ -1,0 +1,317 @@
+main {
+  max-width: 100vw;
+}
+main .hero {
+  display: flex;
+  width: max-content;
+  margin: 20px auto;
+  overflow: visible;
+}
+main .hero h2 {
+  font-family: navigo, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 4em;
+  color: #0A96DE;
+  max-width: 350px;
+  padding: 50px 20px;
+  margin: auto 0 auto 0px;
+  word-spacing: 100vw;
+}
+main .intro {
+  font-family: omnes-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  color: #484848;
+  text-align: center;
+  width: clamp(850px, 30%, 300px);
+  background-color: white;
+  padding-bottom: 12px;
+}
+main .bs-quote {
+  font-family: omnes-pro, sans-serif;
+  font-weight: 400;
+  font-size: 1.6em;
+  color: #3f3f3f;
+}
+main .sessions {
+  display: flex;
+  height: fit-content;
+}
+main .sessions-text {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+main .sessions p {
+  width: 90%;
+  margin: 5px 20px 20px;
+}
+main .sessions-img-belay {
+  margin: 25px 30px;
+}
+main .sessions-img-setup {
+  display: none;
+}
+main .sessions-butt {
+  background-color: #33a0e9;
+  width: max-content;
+  margin-left: 20px;
+}
+main .sessions-butt-mob {
+  display: none;
+}
+main .hayden .flex {
+  display: flex;
+  margin: 10px auto 0;
+  width: max-content;
+}
+main .hayden img {
+  display: block;
+  margin: 10px;
+}
+main .hayden-text {
+  text-align: center;
+}
+main .hayden .quals {
+  margin: auto 0;
+  font-family: quasimoda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #424242;
+}
+main .hayden h4 {
+  font-size: 1.3em;
+}
+main .hayden li {
+  margin: 10px;
+}
+main .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+main .slideshow-container .carousel-img {
+  width: 100%;
+}
+main .slideshow-container .mySlides {
+  display: none;
+}
+main .slideshow-container .prev,
+main .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 50px 50px 0;
+  user-select: none;
+}
+main .slideshow-container-arr {
+  display: block;
+  width: 20px;
+  margin: auto 0;
+}
+main .slideshow-container .next {
+  right: 0;
+  border-radius: 50px 0 0 50px;
+}
+main .slideshow-container .prev:hover,
+main .slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+main .slideshow-container .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+main .slideshow-container .active,
+main .slideshow-container .dot:hover {
+  background-color: #717171;
+}
+main .slideshow-container .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main .contact form {
+  padding-left: 20px;
+}
+main .contact form * {
+  display: block;
+}
+main .contact form label {
+  margin-top: 10px;
+  font-family: omnes-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5em;
+  color: #484848;
+}
+main .contact form input,
+main .contact form textarea {
+  font-family: quasimoda, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #2e2e2e;
+  padding: 5px 7px;
+  margin-top: 3px;
+  border: 2px solid #85f2f2;
+}
+main .contact form textarea {
+  width: 90%;
+}
+main .contact form button {
+  border-radius: 10px;
+  border: none;
+  color: #F2F2F2;
+  background-color: #1fb8c0;
+  padding: 5px 20px 5px;
+  font-family: navigo, sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+main .contact form button:active {
+  background-color: #048b92;
+}
+main .contact .sent {
+  text-align: center;
+}
+main .contact .sent .tick {
+  width: 25%;
+  margin: 0 auto;
+}
+main .contact .sent h4 {
+  font-family: omnes-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5em;
+  color: #08a92b;
+}
+main .contact .sent p {
+  font-size: 1em;
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 0 0 20px;
+  }
+  main .hero {
+    width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  main .hero h2 {
+    order: 2;
+    margin: auto 0;
+    font-size: 3em;
+    width: 100%;
+    display: none;
+  }
+  main .hero-img {
+    width: 100%;
+    display: block;
+    order: 1;
+    margin: 0 auto;
+    max-width: 730px;
+  }
+  main .intro {
+    width: 85%;
+    font-size: 22px;
+  }
+  main .sessions {
+    display: block;
+    width: 85%;
+  }
+  main .sessions p {
+    max-width: 5px 20px 10px;
+  }
+  main .sessions-img {
+    display: block;
+    margin: 0 auto 10px;
+  }
+  main .sessions-img-belay {
+    display: none;
+  }
+  main .sessions-img-setup {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .hayden {
+    margin-top: 10px;
+  }
+  main .hayden-text {
+    font-size: 1.3em;
+  }
+  main .hayden img {
+    margin: 0 auto;
+  }
+  main .hayden .quals {
+    padding-top: 10px;
+  }
+  main .hayden li {
+    margin: 10px 0 10px 15px;
+  }
+  main .hayden .flex {
+    display: block;
+  }
+  main .contact h3 {
+    padding: 10px 20px;
+  }
+  main .slideshow-container-arr {
+    width: 15px;
+  }
+}
+@media (max-width: 480px) {
+  main .intro {
+    font-size: 18px;
+  }
+  main .intro-desk {
+    display: none;
+  }
+  main .sessions p {
+    width: 100%;
+    margin: 5px 5px;
+  }
+  main .sessions-img {
+    width: 100%;
+    margin: 0;
+  }
+  main .sessions-img-belay {
+    width: 150px;
+  }
+  main .sessions-butt {
+    display: block;
+    margin: 10px;
+  }
+  main .hayden-textbox {
+    position: relative;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
