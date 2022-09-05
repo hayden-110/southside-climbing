@@ -83,10 +83,16 @@ main {
             width: max-content;
         }
 
-        img {
+        &-img {
             display: block;
             margin: 10px;
         }
+
+        &-img-mob {
+            display: none;
+        }
+
+
 
         &-text {
             text-align: center;
@@ -327,10 +333,16 @@ main {
             &-text {
                 font-size: 1.3em;
             }
-
-            img {
-                // width: 30%;
-                margin: 0 auto;
+            
+            &-img {
+                display: none;
+                margin: 10px;
+            }
+            
+            &-img-mob {
+                display: block;
+                margin: auto 20px;
+                height: 100%;
             }
 
             .quals {
@@ -341,9 +353,7 @@ main {
                 margin: 10px 0 10px 15px;
             }
 
-            .flex {
-                display: block;
-            }
+            
         }
 
         .contact {
@@ -398,6 +408,10 @@ main {
 
             &-textbox {
                 position: relative;
+            }
+
+            .flex {
+                display: block;
             }
 
             

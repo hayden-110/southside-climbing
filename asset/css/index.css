@@ -67,9 +67,12 @@ main .hayden .flex {
   margin: 10px auto 0;
   width: max-content;
 }
-main .hayden img {
+main .hayden-img {
   display: block;
   margin: 10px;
+}
+main .hayden-img-mob {
+  display: none;
 }
 main .hayden-text {
   text-align: center;
@@ -268,17 +271,20 @@ main .contact .sent p {
   main .hayden-text {
     font-size: 1.3em;
   }
-  main .hayden img {
-    margin: 0 auto;
+  main .hayden-img {
+    display: none;
+    margin: 10px;
+  }
+  main .hayden-img-mob {
+    display: block;
+    margin: auto 20px;
+    height: 100%;
   }
   main .hayden .quals {
     padding-top: 10px;
   }
   main .hayden li {
     margin: 10px 0 10px 15px;
-  }
-  main .hayden .flex {
-    display: block;
   }
   main .contact h3 {
     padding: 10px 20px;
@@ -311,6 +317,9 @@ main .contact .sent p {
   }
   main .hayden-textbox {
     position: relative;
+  }
+  main .hayden .flex {
+    display: block;
   }
 }
 
