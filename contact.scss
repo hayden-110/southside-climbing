@@ -1,0 +1,50 @@
+// sass --watch contact.scss ./asset/css/contact.css
+
+.details {
+    display: block;
+
+    .options {
+        margin-left: 20px;
+    }
+    &-a {
+        display: block;
+        margin: auto 0;
+        font-size: 1.8em !important;
+        line-height: 1.8em !important;
+
+    }
+
+    .tel, .email {
+        display: flex;
+        // height: 50px;
+        margin-bottom: 20px;
+        &-img {
+            width: 50px;
+            margin: 0 20px 0 0;
+        }
+        &-text {
+            display: block;
+            margin: auto 0 !important;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+
+    .details {
+        &-a {
+            font-size: 1.4em !important;
+            line-height: 1.4em !important;
+        }
+    
+        .tel, .email {
+            &-img {
+                margin: 0 20px 0 0;
+            }
+            &-text {
+                margin: auto 0 !important;
+            }
+        }
+    }
+}
+

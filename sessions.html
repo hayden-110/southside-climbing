@@ -26,36 +26,110 @@
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="stylesheet" href="./asset/css/sessions.css">
 
-    <!-- ADOBE FONT -->
-    <link rel="stylesheet" href="https://use.typekit.net/zda5awh.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Nunito:wght@400;500;600&family=Poppins:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
     <nav>
-        <a class="title">
+        <a class="title" href="/">
             <img src="./media/logo.svg" alt="An ocean wave with a pink sky" class="logo">
-            <h1>Southside Climbing</h1>
+            <img src="./media/logo-text-white.svg" alt="Southside Climbing" class="logo-title">
         </a>
 
-        <div class="burger"><img src="./media/icons/burger.svg" alt="burger menu"></div>
+        <div class="links">
+            <a href="../sessions.html" class="links-a">Sessions</a>
+            <a href="../contact.html" class="links-a">Contact</a>
+        </div>
+        <div class="burger" onclick="openMenu()"><img src="./media/icons/burger.svg" alt="burger menu"></div>
+        <div class="mob-menu none">
+            <div class="mob-menu-background"></div>
+            <div class="mob-menu-list">
+                <div class="close" onclick="closeMenu()"><img src="./media/icons/close.svg" alt="cross to close menu">
+                </div>
+                <a href="../sessions.html" class="mob-menu-list-item links-a">Sessions</a>
+                <a href="../contact.html" class="mob-menu-list-item links-a">Contact</a>
+                <div class="mob-menu-socials socials">
+                    <a href="https://www.facebook.com/southsideclimbing/" class="socials-fb"><img src="/media/facebook.svg"
+                        alt="facebook logo"></a>
+                <a href="https://www.instagram.com/southsideclimbing/" class="socials-insta"><img src="/media/instagram.svg"
+                        alt="facebook logo"></a>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <main>
-        
-        <div class="taster bs">
-            <h3>Taster Session</h3>
-            <p class="bookings-text bs-text">We run 3 hour sessions in small groups. You can view our prices and book
-                through Airbnb. For private
-                booking, please contact us on the form below.</p>
-            <div class="bookings-opt">
-                <img src="./media/hayden-hang.jpg" alt="Hayden sat in his harness, suspended next to the rock"
-                    class="airbnb-img">
-                <a class="bookings-opt-bnb"
-                    href="https://www.airbnb.co.uk/experiences/3603916?location=dorset&currentTab=experience_tab&federatedSearchId=cce25cb2-6079-4718-9255-5f3a96fefec8&searchId=&sectionId=d386bc4a-863f-4df5-b652-fdfdafe486d5&source=p2">
-                    <img src="./media/airbnb-logo.svg" alt="Air BnB logo" class="airbnb">
-                    <button class="airbnb-book bs-button-pri">Book</button>
-                </a>
+
+        <div class="L2B bs">
+            <h3 class="bs-title">Learn to Belay</h3>
+            <div class="session-layout">
+                    <img src="./media/L2B.jpg" alt="Hayden sat in his harness, suspended next to the rock"
+                        class="L2B-img">
+                <div class="session-info">
+                    <div class="session-sub"><span class="session-sub-li">8 Hours · </span><span
+                            class="session-sub-li">2-6 Climbers · </span><span class="session-sub-li"></span>
+                    </div>
+                    <p class="session-text bs-text">This sessions is ideal for newcomers to roped climbing. You’ll learn all there is to knots, belaying and climbing.</p>
+
+                    <div class="session-buttons">
+                        <script src="https://assets.ticketinghub.com/checkout.js" data-widget="3d0b09ea-1f3a-4b3c-90de-8f7ce8ea28b1"></script>
+                        <a href="./sessions/learn-to-belay" class="session-see">See More</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="peak bs">
+            <h3 class="bs-title">Peak District</h3>
+                <img src="./media/stanage-popular.jpg" alt="Hayden sat in his harness, suspended next to the rock"
+                    class="peak-img">
+            <div class="session-layout-block">
+                <div class="session-info session-info">
+                    <div class="session-sub">
+                        <span class="session-sub-li">2 Days · </span>
+                        <span class="session-sub-li">2-6 Climbers · </span>
+                        <span class="session-sub-li">Beginners</span>
+                    </div>
+                    <p class="session-text bs-text">We run 3 hour sessions in small groups. You can view our prices and
+                        book
+                        through Airbnb. For private
+                        session, please contact us on the form below.</p>
+
+                    <div class="session-buttons">
+                        <script src="https://assets.ticketinghub.com/checkout.js" data-widget="c3a9cc0d-1372-40bf-a960-8318846ee538"></script>
+                        <a href="./sessions/peak-district.html" class="session-see">See More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="groups bs">
+            <h3 class="bs-title">Group Bookings</h3>
+            <div class="session-layout group-layout">
+                <div class="session-info group-info">
+                    <div class="session-sub"><span
+                            class="session-sub-li">6+ Climbers · Stag & Hen Parties</span>
+                    </div>
+                    <p class="session-text bs-text">We run 3 hour sessions in small groups. You can view our prices and
+                        book
+                        through Airbnb. For private
+                        session, please contact us on the form below.</p>
+
+                    
+                        <div class="session-buttons">
+                            <a href="./contact" class="session-see
+                            bs-button-contact">Contact Us</a>
+                        </div>
+                </div>
+                <img src="./media/groups.jpg" alt="Hayden sat in his harness, suspended next to the rock"
+                        class="group-img">
+            </div>
+        </div>
+
     </main>
 
     <div class="cookie-pop none">
@@ -122,4 +196,5 @@
     </footer>
     <script src="./dist/script/main.js"></script>
 </body>
+
 </html>

@@ -27,29 +27,43 @@
     <link rel="stylesheet" href="./asset/css/index.css">
 
 
-    <!-- ADOBE FONT -->
-    <link rel="stylesheet" href="https://use.typekit.net/zda5awh.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Nunito:wght@400;500;600&family=Poppins:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
 
     <nav>
-        <a class="title">
+        <a class="title" href="/">
             <img src="./media/logo.svg" alt="An ocean wave with a pink sky" class="logo">
-            <h1>Southside Climbing</h1>
+            <img src="./media/logo-text-white.svg" alt="Southside Climbing" class="logo-title">
         </a>
-        <div class="burger" onclick=""><img src="./media/icons/burger.svg" alt="burger menu"></div>
+
+        <div class="links">
+            <a href="../sessions.html" class="links-a">Sessions</a>
+            <a href="../contact.html" class="links-a">Contact</a>
+        </div>
+        <div class="burger" onclick="openMenu()"><img src="./media/icons/burger.svg" alt="burger menu"></div>
         <div class="mob-menu none">
             <div class="mob-menu-background"></div>
             <div class="mob-menu-list">
-                <div class="close" onclick="closeMenu()"><img src="../assets/img/icons/close.svg"
-                    alt="cross to close menu"></div>
-                    <a href="../sessions.html" class="mob-menu-item">Sessions</a>
+                <div class="close" onclick="closeMenu()"><img src="./media/icons/close.svg" alt="cross to close menu">
+                </div>
+                <a href="../sessions.html" class="mob-menu-list-item links-a">Sessions</a>
+                <a href="../contact.html" class="mob-menu-list-item links-a">Contact</a>
+                <div class="mob-menu-socials socials">
+                    <a href="https://www.facebook.com/southsideclimbing/" class="socials-fb"><img src="/media/facebook.svg"
+                        alt="facebook logo"></a>
+                <a href="https://www.instagram.com/southsideclimbing/" class="socials-insta"><img src="/media/instagram.svg"
+                        alt="facebook logo"></a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <main>
+    <main>  
         <div class="hero">
             <h2 class="bs">Experience Climbing Dorset</h2>
             <img src="./media/warm-love.jpg" alt="A young man climbing in the sunset with the sea behind him"
@@ -57,34 +71,48 @@
         </div>
 
         <p class="intro bs">At Southside Climbing we want to share the
-            joy and adventure of climbing in the south coast. Our sessions are for range from beginners to experienced climbers. <span class="intro-desk">You'll also get to take in the stunning views of Dorset and it's wildlife!</span>
+            joy and adventure of climbing in the south coast. Our sessions are for range from beginners to experienced
+            climbers. <span class="intro-desk">You'll also get to take in the stunning views of Dorset and it's
+                wildlife!</span>
         </p>
 
         <div class="sessions bs">
             <div class="sessions-text">
                 <h3 class="bs-title">Our sessions</h3>
-                <p class="bs-text">We run a variety of different sessions in Dorset. Whether you are looking to try something new or you want an action packed holiday, there's something for you.</p>
-                <a class="sessions-butt bs-button-pri desk-cont" href="https://www.airbnb.co.uk/experiences/3603916?guests=1&adults=1&s=67&unique_share_id=131ed476-2b71-433f-9467-00f41b035ecb">See Tastser Sessions</a>
+                <p class="bs-text">We run a variety of different sessions in Dorset. Whether you are looking to try
+                    something new or you want an action packed holiday, there's something for you.</p>
+                <a class="sessions-butt bs-button sessions-butt-desk"
+                    href="./sessions.html">See
+                    Sessions</a>
             </div>
             <div class="sessions-img">
                 <img src="./media/belay.jpg" alt="Myself belaying from my harness, gripping the climbing rope"
-                class="sessions-img-belay desk-cont">
-                <img src="./media/setup-sam.jpg" alt="Myself belaying from my harness, gripping the climbing rope"
-                class="sessions-img-setup">
-                
+                    class="sessions-img-belay">
+                <img src="./media/setup-sam.jpg" alt="Myself gearing up, and passing karabiners to sam"
+                    class="sessions-img-setup">
+
             </div>
-            <a class="sessions-butt bs-button-pri sessions-butt-mob" href="https://www.airbnb.co.uk/experiences/3603916?guests=1&adults=1&s=67&unique_share_id=131ed476-2b71-433f-9467-00f41b035ecb">See Taster Sessions</a>
+            <a class="sessions-butt bs-button sessions-butt-mob"
+                href="./sessions.html">See
+                Sessions</a>
         </div>
 
         <div class="hayden bs">
             <h3 class="bs-title">About Me</h3>
             <div class="hayden-textbox">
-                <p class="hayden-text bs-quote">"Hello, I'm Hayden, the owner and instructor of Southside Climbing. I've been climbing since I was 15, since then it's become a huge part of my life. I love climbing because it challenges me physically and mentally. There's always a climb that I'm challenging myself on, once I've climbed something I've worked, on I get a real sense of achievement. Climbing is for everyone, I'm proud to be part of such a friendly and diverse communitity."</p>
+                <p class="hayden-text bs-text">"Hello, I'm Hayden, the owner of Southside Climbing. I've
+                    been climbing since I was 15, since then it's become a huge part of my life. I love climbing because
+                    it challenges me physically and mentally. There's always a climb that I'm challenging myself on,
+                    once I've climbed something I've worked, on I get a real sense of achievement. Climbing is for
+                    everyone, I'm proud to be part of such a friendly and diverse communitity."</p>
                 <!-- <div class="hayden-extend"><img src="./media/icons/down-arr.svg" alt="down arrow" class="hayden-arr"></div> -->
+                <!-- https://www.w3schools.com/howto/howto_js_read_more.asp -->
             </div>
             <div class="flex">
-                <img src="/media/hayden-hang.jpg" alt="Hayden sat in his harness, suspended next to the rock" class="hayden-img">
-                <img src="/media/hayden-hang-mob.jpg" alt="Hayden sat in his harness, suspended next to the rock" class="hayden-img-mob">
+                <img src="/media/hayden-hang.jpg" alt="Hayden sat in his harness, suspended next to the rock"
+                    class="hayden-img">
+                <img src="/media/hayden-hang-mob.jpg" alt="Hayden sat in his harness, suspended next to the rock"
+                    class="hayden-img-mob">
                 <ul class="bs-text quals">
                     <h4>Qualifications:</h4>
                     <li>Rock Climbing Instructor</li>
@@ -97,42 +125,44 @@
             </div>
         </div>
 
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="./media/carousel-1.jpg" class="carousel-img">
-                </div>
-            
-                <div class="mySlides fade">
-                    <img src="./media/carousel-2.jpg" class="carousel-img">
-                </div>
-            
-                <div class="mySlides fade">
-                    <img src="./media/carousel-3.jpg" class="carousel-img">
-                </div>
-            
-                <div class="mySlides fade">
-                    <img src="./media/carousel-4.jpg" class="carousel-img">
-                </div>
-            
-                <div class="mySlides fade">
-                    <img src="./media/carousel-5.jpg" class="carousel-img">
-                </div>
-            
-                <div class="mySlides fade">
-                    <img src="./media/carousel-6.jpg" style="width:100%">
-                </div>
-                <a class="prev" onclick="plusSlides(-1)"><img src="./media/icons/left-arr.svg" alt="arrow pointing left" class="slideshow-container-arr"></a>
-                <a class="next" onclick="plusSlides(1)"><img src="./media/icons/right-arr.svg" alt="arrow pointing right" class="slideshow-container-arr"></a>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./media/carousel-1.jpg" class="carousel-img">
             </div>
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
+
+            <div class="mySlides fade">
+                <img src="./media/carousel-2.jpg" class="carousel-img">
             </div>
+
+            <div class="mySlides fade">
+                <img src="./media/carousel-3.jpg" class="carousel-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./media/carousel-4.jpg" class="carousel-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./media/carousel-5.jpg" class="carousel-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./media/carousel-6.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"><img src="./media/icons/left-arr.svg" alt="arrow pointing left"
+                    class="slideshow-container-arr"></a>
+            <a class="next" onclick="plusSlides(1)"><img src="./media/icons/right-arr.svg" alt="arrow pointing right"
+                    class="slideshow-container-arr"></a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
 
 
 
@@ -155,7 +185,7 @@
                 <label for="message">Message</label>
                 <textarea name="message" id="message" cols="30" rows="10" required></textarea>
                 <label class="error" id="messageError"></label>
-                <button type="submit" class="contact-form-button">Send</button>
+                <button type="submit" class="bs-button contact-form-button">Send</button>
             </form>
 
         </div>
@@ -224,7 +254,7 @@
         </div>
     </footer>
     <script src="./asset/script/contact.js"></script>
-    <script src="./asset/script/cookie.js"></script>
+    <script src="./asset/script/cookie-jar.js"></script>
     <script src="./asset/script/index.js"></script>
     <script src="./asset/script/nav.js"></script>
 

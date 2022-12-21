@@ -8,10 +8,11 @@ main .hero {
   overflow: visible;
 }
 main .hero h2 {
-  font-family: navigo, sans-serif;
-  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.4em;
   font-style: normal;
-  font-size: 4em;
+  font-size: 3.8em;
   color: #0A96DE;
   max-width: 350px;
   padding: 50px 20px;
@@ -19,21 +20,15 @@ main .hero h2 {
   word-spacing: 100vw;
 }
 main .intro {
-  font-family: omnes-pro, sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2em;
+  font-size: 1.8em;
   color: #484848;
   text-align: center;
   width: clamp(850px, 30%, 300px);
   background-color: white;
-  padding-bottom: 12px;
-}
-main .bs-quote {
-  font-family: omnes-pro, sans-serif;
-  font-weight: 400;
-  font-size: 1.6em;
-  color: #3f3f3f;
+  padding: 10px 20px 15px !important;
 }
 main .sessions {
   display: flex;
@@ -46,7 +41,7 @@ main .sessions-text {
 }
 main .sessions p {
   width: 90%;
-  margin: 5px 20px 20px;
+  margin: 0 20px 15px;
 }
 main .sessions-img-belay {
   margin: 25px 30px;
@@ -57,7 +52,7 @@ main .sessions-img-setup {
 main .sessions-butt {
   background-color: #33a0e9;
   width: max-content;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 main .sessions-butt-mob {
   display: none;
@@ -79,7 +74,7 @@ main .hayden-text {
 }
 main .hayden .quals {
   margin: auto 0;
-  font-family: quasimoda, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #424242;
@@ -91,9 +86,10 @@ main .hayden li {
   margin: 10px;
 }
 main .slideshow-container {
+  z-index: 1 !important;
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: 0 auto 20px;
   /* Hide the images by default */
   /* Next & previous buttons */
   /* Position the "next button" to the right */
@@ -150,6 +146,7 @@ main .slideshow-container .dot:hover {
   background-color: #717171;
 }
 main .slideshow-container .fade {
+  z-index: 1;
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -159,6 +156,7 @@ main .slideshow-container .fade {
   }
   to {
     opacity: 1;
+    z-index: 1 !important;
   }
 }
 main .contact form {
@@ -169,7 +167,7 @@ main .contact form * {
 }
 main .contact form label {
   margin-top: 10px;
-  font-family: omnes-pro, sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 1.5em;
@@ -177,13 +175,14 @@ main .contact form label {
 }
 main .contact form input,
 main .contact form textarea {
-  font-family: quasimoda, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
   color: #2e2e2e;
   padding: 5px 7px;
   margin-top: 3px;
-  border: 2px solid #85f2f2;
+  border: 2px solid rgb(133, 242, 242);
+  max-width: 90%;
 }
 main .contact form textarea {
   width: 90%;
@@ -193,9 +192,9 @@ main .contact form button {
   border: none;
   color: #F2F2F2;
   background-color: #1fb8c0;
-  padding: 5px 20px 5px;
-  font-family: navigo, sans-serif;
-  font-size: 1.5em;
+  padding: 5px 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 main .contact form button:active {
@@ -209,7 +208,7 @@ main .contact .sent .tick {
   margin: 0 auto;
 }
 main .contact .sent h4 {
-  font-family: omnes-pro, sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.5em;
@@ -220,9 +219,6 @@ main .contact .sent p {
 }
 
 @media (max-width: 1000px) {
-  main {
-    padding: 0 0 20px;
-  }
   main .hero {
     width: 100%;
     margin: 0;
@@ -239,8 +235,8 @@ main .contact .sent p {
     width: 100%;
     display: block;
     order: 1;
-    margin: 0 auto;
-    max-width: 730px;
+    margin: 0 auto 15px;
+    max-width: 600px;
   }
   main .intro {
     width: 85%;
@@ -249,9 +245,6 @@ main .contact .sent p {
   main .sessions {
     display: block;
     width: 85%;
-  }
-  main .sessions p {
-    max-width: 5px 20px 10px;
   }
   main .sessions-img {
     display: block;
@@ -264,6 +257,13 @@ main .contact .sent p {
     display: block;
     width: 90%;
     margin: 0 auto;
+  }
+  main .sessions-butt-desk {
+    display: none;
+  }
+  main .sessions-butt-mob {
+    display: block;
+    margin: 10px 5% 10px auto;
   }
   main .hayden {
     margin-top: 10px;
@@ -286,8 +286,20 @@ main .contact .sent p {
   main .hayden li {
     margin: 10px 0 10px 15px;
   }
+}
+@media (max-width: 1000px) and (max-width: 620px) {
+  main .hayden .flex {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
   main .contact h3 {
     padding: 10px 20px;
+  }
+}
+@media (max-width: 1000px) {
+  main .slideshow-container {
+    z-index: 1;
   }
   main .slideshow-container-arr {
     width: 15px;
@@ -312,14 +324,10 @@ main .contact .sent p {
     width: 150px;
   }
   main .sessions-butt {
-    display: block;
     margin: 10px;
   }
   main .hayden-textbox {
     position: relative;
-  }
-  main .hayden .flex {
-    display: block;
   }
 }
 

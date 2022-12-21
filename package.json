@@ -3,14 +3,15 @@
     "js-cookie": "^3.0.1"
   },
   "devDependencies": {
-    "webpack": "^5.74.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.75.0",
     "webpack-cli": "^4.10.0"
   },
   "name": "southside-climbing",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,6 @@
     "url": "https://github.com/hayden-110/southside-climbing/issues"
   },
   "homepage": "https://github.com/hayden-110/southside-climbing#readme",
+  "main": "./asset/script/cookie.js",
   "description": ""
 }

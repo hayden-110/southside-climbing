@@ -1,0 +1,39 @@
+.details {
+  display: block;
+}
+.details .options {
+  margin-left: 20px;
+}
+.details-a {
+  display: block;
+  margin: auto 0;
+  font-size: 1.8em !important;
+  line-height: 1.8em !important;
+}
+.details .tel, .details .email {
+  display: flex;
+  margin-bottom: 20px;
+}
+.details .tel-img, .details .email-img {
+  width: 50px;
+  margin: 0 20px 0 0;
+}
+.details .tel-text, .details .email-text {
+  display: block;
+  margin: auto 0 !important;
+}
+
+@media (max-width: 700px) {
+  .details-a {
+    font-size: 1.4em !important;
+    line-height: 1.4em !important;
+  }
+  .details .tel-img, .details .email-img {
+    margin: 0 20px 0 0;
+  }
+  .details .tel-text, .details .email-text {
+    margin: auto 0 !important;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

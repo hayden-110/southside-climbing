@@ -1,2 +1,105 @@
 // sass --watch sessions.scss ./asset/css/sessions.css
 
+.session {
+    
+    &-layout {
+        display: flex;
+        &-block {
+            display: block;
+        }
+    }
+
+    &-info {
+        padding: 10px 20px;
+        &-left {
+            padding-left: 0;
+        }
+    } 
+
+    &-sub {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.4em;
+        color: rgb(52, 52, 52);
+    }
+    
+    &-text {
+        margin-bottom: auto;
+    }
+
+    &-buttons {
+        display: block;
+        margin-top: auto;
+    }
+
+    &-see {
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 14px 20px;
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        box-sizing: border-box;;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: rgb(160, 160, 160);
+        text-decoration: none;
+    }
+
+}
+
+.L2B {
+    &-img {
+        width: 200%;
+        height: auto;
+    }
+
+    //l2b page
+
+    
+}
+
+.peak {
+    &-img {
+        width: 100%;
+    }
+}
+
+.group {
+    &-img {
+        width: 170%;
+    }
+}
+
+@media (max-width: 670px) {
+    .session {
+        &-layout {
+            display: block;
+        }
+    }
+
+    .L2B {
+        &-img {
+            width: 70%;
+            margin: 5px auto;
+            display: block;
+        }
+    }
+
+    .group {
+        &-layout {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &-img {
+            width: 50%;
+            margin: 0 auto;
+            // display: block;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import Cookies from './node_modules/js-cookie/dist/js.cookie.mjs'
+import Cookies from 'js-cookie'
 
 const banner = document.querySelector('.cookie-pop');
 const acceptAll = document.querySelectorAll('#acceptAll');
@@ -11,7 +11,7 @@ const checkboxes = document.querySelectorAll('.checkbox')
 
 document.addEventListener('DOMContentLoaded', () => {
     if(!Cookies.get('southsideEssential')){
-        Cookies.set('southsideEssential', true, { expires: 28, path: '', sameSite: 'strict'});
+        Cookies.set('southsideEssential', true, { expires: 2, path: '', sameSite: 'strict'});
         banner.classList.remove('none');
     }
 
@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function acceptAllCookies(){
+    Cookies.set('southsideEssential', true, { expires: 28, path: '', sameSite: 'strict'});
     Cookies.set('southsideThirdParty', true, { expires: 28, path: '', sameSite: 'strict'});
     Cookies.set('southsideMarket', true, { expires: 28, path: '', sameSite: 'lax'});
     window.dataLayer = window.dataLayer || [];

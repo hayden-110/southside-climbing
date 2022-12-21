@@ -27,66 +27,53 @@
     <link rel="stylesheet" href="./asset/css/index.css">
 
 
-    <!-- ADOBE FONT -->
-    <link rel="stylesheet" href="https://use.typekit.net/zda5awh.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Nunito:wght@400;500;600&family=Poppins:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
 
     <nav>
-        <a class="title">
+        <a class="title" href="/">
             <img src="./media/logo.svg" alt="An ocean wave with a pink sky" class="logo">
-            <h1>Southside Climbing</h1>
+            <img src="./media/logo-text-white.svg" alt="Southside Climbing" class="logo-title">
         </a>
-        <!-- <div class="burger"><img src="./media/icons/burger.svg" alt="burger menu"></div> -->
+
+        <div class="links">
+            <a href="../sessions.html" class="links-a">Sessions</a>
+            <a href="../contact.html" class="links-a">Contact</a>
+        </div>
+        <div class="burger" onclick="openMenu()"><img src="./media/icons/burger.svg" alt="burger menu"></div>
+        <div class="mob-menu none">
+            <div class="mob-menu-background"></div>
+            <div class="mob-menu-list">
+                <div class="close" onclick="closeMenu()"><img src="./media/icons/close.svg" alt="cross to close menu">
+                </div>
+                <a href="../sessions.html" class="mob-menu-list-item links-a">Sessions</a>
+                <a href="../contact.html" class="mob-menu-list-item links-a">Contact</a>
+                <div class="mob-menu-socials socials">
+                    <a href="https://www.facebook.com/southsideclimbing/" class="socials-fb"><img src="/media/facebook.svg"
+                        alt="facebook logo"></a>
+                <a href="https://www.instagram.com/southsideclimbing/" class="socials-insta"><img src="/media/instagram.svg"
+                        alt="facebook logo"></a>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <main>
-        <div class="hero">
-            <h2 class="bs">Experience Climbing Dorset</h2>
-            <img src="./media/warm-love.jpg" alt="A young man climbing in the sunset with the sea behind him"
-                class="hero-img">
-        </div>
 
-        <p class="intro bs">At Southside Climbing we want to share the
-            joy and adventure of climbing in the south coast. Our sessions are for range from beginners to experienced climbers. <span class="intro-desk">You'll also get to take in the stunning views of Dorset and it's wildlife!</span>
-        </p>
-
-        <div class="sessions bs">
-            <div class="sessions-text">
-                <h3 class="bs-title">Our sessions</h3>
-                <p class="bs-text">We run a variety of different sessions in Dorset. Whether you are looking to try something new or you want an action packed holiday, there's something for you.</p>
-                <a class="sessions-butt bs-button-pri desk-cont" href="https://www.airbnb.co.uk/experiences/3603916?guests=1&adults=1&s=67&unique_share_id=131ed476-2b71-433f-9467-00f41b035ecb">See Tastser Sessions</a>
-            </div>
-            <div class="sessions-img">
-                <img src="./media/belay.jpg" alt="Myself belaying from my harness, gripping the climbing rope"
-                class="sessions-img-belay desk-cont">
-                <img src="./media/setup-sam.jpg" alt="Myself belaying from my harness, gripping the climbing rope"
-                class="sessions-img-setup">
-                
-            </div>
-            <a class="sessions-butt bs-button-pri sessions-butt-mob" href="https://www.airbnb.co.uk/experiences/3603916?guests=1&adults=1&s=67&unique_share_id=131ed476-2b71-433f-9467-00f41b035ecb">See Taster Sessions</a>
-        </div>
-
-        <div class="hayden bs">
-            <h3 class="bs-title">About Me</h3>
-            <div class="hayden-textbox">
-                <p class="hayden-text bs-quote">"Hello, I'm Hayden, the owner and instructor of Southside Climbing. I've been climbing since I was 15, since then it's become a huge part of my life. I love climbing because it challenges me physically and mentally. There's always a climb that I'm challenging myself on, once I've climbed something I've worked, on I get a real sense of achievement. Climbing is for everyone, I'm proud to be part of such a friendly and diverse communitity."</p>
-                <!-- <div class="hayden-extend"><img src="./media/icons/down-arr.svg" alt="down arrow" class="hayden-arr"></div> -->
-            </div>
-            <div class="flex">
-                <img src="/media/hayden-hang-mob.jpg" alt="Hayden sat in his harness, suspended next to the rock">
-                <!-- <img src="/media/hayden-hang.jpg" alt="Hayden sat in his harness, suspended next to the rock"> -->
-                <ul class="bs-text quals">
-                    <h4>Qualifications:</h4>
-                    <li>Rock Climbing Instructor</li>
-                    <li>Climbing Wall Instructor</li>
-                    <li>Foundation Coach</li>
-                    <li>First Aid in the Outdoors</li>
-                    <li>Safeguarding in Sport</li>
-
-                </ul>
-            </div>
+        <div class="contact bs">
+            <h3 class="bs-title">Contact Us</h3>
+            
+            <form class="sent">
+                <img src="./media/tick.svg" alt="green tick" class="tick">
+                <h4 class="sent-text">Message Sent!</h4>
+                <p class="bs-text">Thank you for your message, we'll reply in the next few days.</p>
+            </form>
+            
         </div>
 
             <!-- Slideshow container -->
@@ -128,16 +115,6 @@
 
 
 
-            <div class="contact bs">
-                <h3>Contact Us</h3>
-                
-                <form class="sent">
-                    <img src="./media/tick.svg" alt="green tick" class="tick">
-                    <h4>Message Sent!</h4>
-                    <p>Thank you for your message, we'll reply in the next few days.</p>
-                </form>
-                
-            </div>
     </main>
 
     <div class="cookie-pop none">
